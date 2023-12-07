@@ -1,15 +1,13 @@
 import React from "react";
-
-function BotCollection() {
-  // Your code here
+import BotCollection from "./BotCollection" 
+function App() {
+  //
   return (
-    <div className="ui four column grid">
-      <div className="row">
-        {/*...and here..*/}
-        Collection of all bots
+    <div className="App">
+      <BotCollection />
+        
       </div>
-    </div>
   );
-}</div
+}
 
-export default BotCollection;
+export default App;
