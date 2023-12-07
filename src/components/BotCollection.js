@@ -10,6 +10,6 @@ function BotCollection() {
       </div>
     </div>
   );
-}
+}</div
 
 export default BotCollection;

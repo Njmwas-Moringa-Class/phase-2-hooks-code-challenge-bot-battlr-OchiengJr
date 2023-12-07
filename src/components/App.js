@@ -7,6 +7,6 @@ function App() {
       <BotsPage />
     </div>
   );
-}
+}<div
 
 export default App;
