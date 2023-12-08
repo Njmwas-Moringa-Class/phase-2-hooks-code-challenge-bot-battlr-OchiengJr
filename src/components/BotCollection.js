@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import BotCard from "./BotCard";
 
 function BotCollection({ onEnlist, onRelease, onDischarge }) {
-  // State to hold the list of bots
+  
   const [bots, setBots] = useState([]);
 
-  // Fetch bots data from the server when the component mounts
   useEffect(() => {
     fetch("http://localhost:8002/bots")
       .then((response) => {
@@ -21,14 +20,14 @@ function BotCollection({ onEnlist, onRelease, onDischarge }) {
   return (
     <div className="ui four column grid">
       <div className="row">
-        {/* Map through the bots array and render BotCard for each bot */}
+        
         {bots.map((bot) => (
           <BotCard
             key={bot.id}
             bot={bot}
             onEnlist={onEnlist}
-            onRelease={onRelease} // Updated: Changed onRelease to onRelease
-            onDischarge={onDischarge} // Updated: Added onDischarge
+            onRelease={onRelease} // 
+            onDischarge={onDischarge} 
           />
         ))}
       </div>
